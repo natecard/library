@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="margin-0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Library</title>
+</head>
+<body>
+  <div id="header">The Library</div>
+  <div id="main">
+    <div id="sidebar">
+      <form id="form" action="" data-form>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" data-input-book-title>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" data-input-book-author>
+        <label for="pages">Pages:</label>
+        <input type="text" name="pages" id="pages" data-input-book-pages>
+        <label for="read">Read?</label>
+        <input type="checkbox" name="read" id="read" data-input-book-read>
+        <button type="submit" id="addBookBtn">Add to Library</button>
+      </form>
+        <div id="counter">
+        </div>
+    </div>
+    <div id="library"></div>
+    <div id="footer"></div>
+  </div>
+    <template id="book-template">
+      <li class="book">
+        <div class="bookContainer">
+          <div class="title"></div>
+          <div class="author"></div>
+          <div class="pages"></div>
+          <input type="checkbox" name="read"class="read"/>
+          <label for="read"></label>
+        </div>
+      </li>
+    </template>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
